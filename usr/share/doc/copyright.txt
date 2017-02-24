@@ -1,0 +1,5 @@
+FishOS Copyright Page (c) not-really-a-copyright fishermedders.com 2016-2017
+
+FishOS comes without any warranty and is free to use.
+
+This file is mostly for the meme because usually linux operating systems like this have a copyright page, but since this is a ComputerCraft operating system made for Minecraft, this doesn't really need to be here, but it is, so iff'n you're gonna read it, congratulations, you've found an operating system meme.
