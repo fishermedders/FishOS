@@ -6,13 +6,15 @@ for i = 1,#tDirs do
   fs.makeDir(tDirs[i])
 end
 
-for i = 1,#tUrls do
+--No longer needed, we host on github now :)
+--[[for i = 1,#tUrls do
   for i1 = 1,#tFiles[i] do
     fs.delete(tFiles[i][i1])
     shell.run("pastebin get "..tUrls[i].." "..tFiles[i][i1])
     print("Updated file "..tFiles[i][i1])
   end
-end
+end]]--
+
 if _G["isdisk"] == nil then
   os.reboot()
 end
