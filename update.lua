@@ -15,6 +15,14 @@ end
   end
 end]]--
 
+if fs.exists("/startup") then
+  fs.move("/startup","/startup_old.fos")
+end
+
+oFile = fs.open( "startup", "w" )
+oFile.write( "shell.run(\"main.lua\")" )
+oFile.close()
+
 if _G["isdisk"] == nil then
   os.reboot()
 end
