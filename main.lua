@@ -5,6 +5,10 @@
 --an operating system that you can
 --build on top of craftos.
 
+if fs.exists( ".startinstruct" ) then
+  shell.run( ".startinstruct" )
+end
+
 tUtils = fs.list( "/bin/util/" )
 for i = 1,#tUtils do
   os.loadAPI( "/bin/util/" .. tUtils[i] )
