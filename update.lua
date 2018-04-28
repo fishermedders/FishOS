@@ -10,7 +10,7 @@ end
 for i = 1,#tUrls do
   for i1 = 1,#tFiles[i] do
     oFile = fs.open(tFiles[i][i1],"w")
-    print("Grabbing File: " .. tUrls[i] .. "from github!")
+    print("Grabbing File: " .. tUrls[i] .. " from github!")
     sContent = http.get( sFSBase .. tUrls[i] ).readAll()
     oFile.write(sContent)
     oFile.close()
