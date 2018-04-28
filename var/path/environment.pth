@@ -1,1 +1,4 @@
-{"bin","sbin"}
+{
+  ["path"] = {"bin","sbin"},
+  ["fs_aliases"] = {{"list","ls"}}
+}
