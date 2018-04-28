@@ -1,4 +1,4 @@
 {
   ["path"] = {"bin","sbin"},
-  ["fs_aliases"] = {{"/bin/list","ls"}}
+  ["fs_aliases"] = {{"/bin/list","ls"},{"clear","cls"}}
 }
