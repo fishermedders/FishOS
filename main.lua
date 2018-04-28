@@ -198,7 +198,7 @@ function boot()
         if sInput:gsub( " ", "" ) ~= "" then
           local tArgs = {}
           if sInput:find( " " ) then
-		          for sArg in sInput:gmatch( "%S+" ) do
+	    for sArg in sInput:gmatch( "%S+" ) do
               table.insert( tArgs, sArg )
             end
           else
@@ -215,10 +215,20 @@ function boot()
           end
           for i = 1,#tPath["path"] do
             if dfind( tPath["path"][i] .. "/" .. tArgs[1] ) then
-             	bFound = true
-             	shell.run( tPath["path"][i] .. "/" .. tArgs[1] .. " " .. sArgs )
+              bFound = true
+              shell.run( tPath["path"][i] .. "/" .. tArgs[1] .. " " .. sArgs )
             end
           end
+	  if not bFound then
+	    for i = 1,#tPath["fs_aliases"] do
+	      for i1 = 2,#tPath["fs_aliases"][i] do
+		if tArgs[1] == tPath["fs_aliases"][i][i1] then
+		  bFound = true
+                  shell.run( tPath["fs_aliases"][i][1] .. " " .. sArgs )
+		end
+	      end
+	    end
+	  end
         end
         if not bFound then
           shell.run(sInput)
