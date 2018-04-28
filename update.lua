@@ -1,6 +1,6 @@
-tUrls = {"/main.lua","/bin/list.lua","/bin/nano.lua","/bin/util/str.lua","/bin/logout.lua","/bin/cardboard.lua","/bin/addusr.lua","/bin/passwd.lua","/bin/util/fishutils.lua","/usr/share/doc/copyright.txt","/update.lua"}
+tUrls = {"/main.lua","/bin/list.lua","/bin/nano.lua","/bin/util/str.lua","/bin/logout.lua","/bin/cardboard.lua","/bin/addusr.lua","/bin/passwd.lua","/bin/util/fishutils.lua","/usr/share/doc/copyright.txt","/update.lua","/var/path/environment.pth"}
 tDirs = {"/bin","/bin/util","usr/share/doc"}
-tFiles = {{"/main"},{"/bin/list"},{"/bin/nano"},{"/bin/util/str"},{"/bin/logout"},{"/bin/cardboard"},{"/bin/addusr"},{"/bin/passwd"},{"/bin/util/fishutils"},{"usr/share/doc/copyright"},{"/bin/update"}}
+tFiles = {{"/main"},{"/bin/list"},{"/bin/nano"},{"/bin/util/str"},{"/bin/logout"},{"/bin/cardboard"},{"/bin/addusr"},{"/bin/passwd"},{"/bin/util/fishutils"},{"usr/share/doc/copyright"},{"/bin/update"},{"/var/path/environment.pth"}}
 sFSBase = "https://raw.githubusercontent.com/fishermedders/FishOS/master"
 
 for i = 1,#tDirs do
