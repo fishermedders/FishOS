@@ -214,9 +214,9 @@ function boot()
             end
           end
           for i = 1,#tPath do
-            if dfind( tPath[i] .. "/" .. tArgs[1] .. ".lua" ) then
+            if dfind( tPath[i] .. "/" .. tArgs[1] ) then
              	bFound = true
-             	shell.run( tPath[i] .. "/" .. tArgs[1] .. ".lua " .. sArgs )
+             	shell.run( tPath[i] .. "/" .. tArgs[1] .. " " .. sArgs )
             end
           end
         end
