@@ -9,7 +9,7 @@ end
 
 for i = 1,#tUrls do
   for i1 = 1,#tFiles[i] do
-    oFile = fs.open(tFIles[i][i1],"w")
+    oFile = fs.open(tFiles[i][i1],"w")
     print("Grabbing File: " .. tUrls[i] .. "from github!")
     sContent = http.get( sFSBase .. tUrls[i] ).readAll()
     oFile.write(sContent)
@@ -25,7 +25,7 @@ if fs.exists("/startup") then
 end
 
 oFile = fs.open("startup", "w")
-oFile.write("shell.run(\"main.lua\")")
+oFile.write("shell.run(\"main\")")
 oFile.close()
 
 oFile = fs.open(".startinstruct", "w")
