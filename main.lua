@@ -213,10 +213,10 @@ function boot()
               sArgs = sArgs .. tArgs[i] .. " "
             end
           end
-          for i = 1,#tPath do
-            if dfind( tPath[i] .. "/" .. tArgs[1] ) then
+          for i = 1,#tPath["path"] do
+            if dfind( tPath["path"][i] .. "/" .. tArgs[1] ) then
              	bFound = true
-             	shell.run( tPath[i] .. "/" .. tArgs[1] .. " " .. sArgs )
+             	shell.run( tPath["path"][i] .. "/" .. tArgs[1] .. " " .. sArgs )
             end
           end
         end
