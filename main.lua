@@ -149,7 +149,7 @@ if not fs.exists( "/etc/shadow" ) then
   oFile.write( textutils.serialize( tPass ) )
   oFile.close()
   tPass = nil
-  print( "User '" .. user .. "' added. Press any key to Continue!" )
+  print( "User '" .. sUser .. "' added. Press any key to Continue!" )
   os.pullEvent( "key" )
   os.reboot()
 end
